@@ -93,36 +93,39 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.8;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* https://github.com/bluz71/vim-moonfly-colors#256-color-terminals */
 	/* 8 normal colors */
-	"#373C40", /* "black", */
-	"#FF5454", /* "red3", */
-	"#8CC85F", /* "green3", */
-	"#E3C78A", /* "yellow3", */
-	"#80A0FF", /* "blue2", */
-	"#D183E8", /* "magenta3", */
-	"#79DAC8", /* "cyan3", */
-	"#DE935F", /* "gray90", */
+	"#373C40", /* 0 */
+  "#FF5454",
+  "#8CC85F",
+	"#E3C78A",
+	"#80A0FF",
+	"#D183E8",
+	"#79DAC8",
+	"#DE935F",
 
 	/* 8 bright colors */
-	"#F09479", /* "gray50", */
-	"#FF5189", /* "red", */
-	"#36C692", /* "green", */
-	"#BFBF97", /* "yellow", */
-	"#78C2FF", /* "#5c5cff", */
-	"#AE81FF", /* "magenta", */
-	"#85DC85", /* "cyan", */
-	"#E2637F", /* "white", */
+	"#F09479", /* 8 */
+	"#FF5189",
+	"#36C692",
+	"#BFBF97",
+	"#78C2FF",
+	"#AE81FF",
+	"#85DC85",
+	"#E2637F",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#B2B2B2", /* "#555555", */
-	"#080808", /* "#cccccc", */
-
-  "#9E9E9E"
+	"#B2B2B2", /* 256 */
+	"#080808",
+  "#9E9E9E",
+  "black"
 };
 
 
@@ -131,7 +134,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 256;
-unsigned int defaultbg = 257;
+unsigned int defaultbg = 259;
 static unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 257;
 
