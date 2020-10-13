@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Semibold:pixelsize=22:antialias=true:autohint=true";
+static char *font = "Iosevka Semibold:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -122,7 +122,7 @@ static const char *colorname[] = {
 	"#B2B2B2", /* "#555555", */
 	"#080808", /* "#cccccc", */
 
-  "#9E9E9E",
+  "#9E9E9E"
 };
 
 
