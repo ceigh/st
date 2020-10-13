@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Iosevka Semibold:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -95,31 +95,34 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+  /* https://github.com/bluz71/vim-moonfly-colors#256-color-terminals */
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#373C40", /* "black", */
+	"#FF5454", /* "red3", */
+	"#8CC85F", /* "green3", */
+	"#E3C78A", /* "yellow3", */
+	"#80A0FF", /* "blue2", */
+	"#D183E8", /* "magenta3", */
+	"#79DAC8", /* "cyan3", */
+	"#DE935F", /* "gray90", */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#F09479", /* "gray50", */
+	"#FF5189", /* "red", */
+	"#36C692", /* "green", */
+	"#BFBF97", /* "yellow", */
+	"#78C2FF", /* "#5c5cff", */
+	"#AE81FF", /* "magenta", */
+	"#85DC85", /* "cyan", */
+	"#E2637F", /* "white", */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	"#B2B2B2", /* "#555555", */
+	"#080808", /* "#cccccc", */
+
+  "#9E9E9E"
 };
 
 
@@ -127,9 +130,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+static unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -139,7 +142,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
