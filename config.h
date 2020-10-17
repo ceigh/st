@@ -122,7 +122,7 @@ static const char *colorname[] = {
 	"#DE935F",
 
 	/* 8 bright colors */
-	"#F09479", /* 8 */
+	"#9E9E9E", /* 8 */
 	"#FF5189",
 	"#36C692",
 	"#BFBF97",
@@ -135,8 +135,7 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#B2B2B2", /* 256 */
-	"#080808",
-  "#9E9E9E"
+	"#080808"
 };
 
 
@@ -146,7 +145,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
-static unsigned int defaultcs = 258;
+static unsigned int defaultcs = 8;
 static unsigned int defaultrcs = 257;
 
 /*
