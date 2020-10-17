@@ -73,11 +73,11 @@ static unsigned int cursorthickness = 2;
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
  * 0: disable (render all U25XX glyphs normally from the font).
  */
-const int boxdraw = 1;
-const int boxdraw_bold = 1;
+const int boxdraw = 0;
+const int boxdraw_bold = 0;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
-const int boxdraw_braille = 1;
+const int boxdraw_braille = 0;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -119,7 +119,7 @@ static const char *colorname[] = {
 	"#80A0FF",
 	"#D183E8",
 	"#79DAC8",
-	"#DE935F",
+	"#D8D8D8",
 
 	/* 8 bright colors */
 	"#9E9E9E", /* 8 */
