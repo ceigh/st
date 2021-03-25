@@ -6,7 +6,9 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Iosevka Term,Iosevka Nerd Font:style=Medium:pixelsize=16:antialias=true:autohint=true";
-// static char *font = "Iosevka Nerd Font:style=Bold:pixelsize=16:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = { "Apple Color Emoji:pixelsize=14:antialias=true:autohint=true" };
+
 static int borderpx = 2;
 
 /*
