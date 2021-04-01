@@ -8,7 +8,7 @@
 static char *font = "monospace:pixelsize=16";
 /* Spare fonts */
 static char *font2[] = {
-  "Apple Color Emoji:pixelsize=14"
+  "emoji:pixelsize=14"
 };
 
 static int borderpx = 2;
@@ -140,7 +140,7 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#B2B2B2", /* 256 */
-	"#080808"
+	"#000"
 };
 
 
