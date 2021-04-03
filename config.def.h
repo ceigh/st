@@ -91,7 +91,7 @@ const int boxdraw_braille = 0;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "st";
 
 /*
  * spaces per tab
@@ -108,39 +108,40 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 2;
 
 /* bg opacity */
 float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* https://github.com/bluz71/vim-moonfly-colors#256-color-terminals */
 	/* 8 normal colors */
-	"#373C40", /* 0 */
-  "#FF5454",
-  "#8CC85F",
-	"#E3C78A",
-	"#80A0FF",
-	"#D183E8",
-	"#79DAC8",
-	"#D8D8D8",
+	"#000000", /* 0 */
+  "#ac4142",
+  "#b4c973",
+	"#e5b567",
+	"#6c99bb",
+	"#9e86c8",
+	"#90B197",
+	"#d6d6d6",
 
 	/* 8 bright colors */
-	"#9E9E9E", /* 8 */
-	"#FF5189",
-	"#36C692",
-	"#BFBF97",
-	"#78C2FF",
-	"#AE81FF",
-	"#85DC85",
-	"#E2637F",
+	"#1a1a1a", /* 8 */
+  "#ac4142",
+  "#b4c973",
+	"#e5b567",
+	"#6c99bb",
+	"#9e86c8",
+	"#90B197",
+	"#d6d6d6",
 
+  /*
 	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#B2B2B2", /* 256 */
-	"#000"
+	// more colors can be added after 255 to use with DefaultXX
+	"#d6d6d6", // 256
+	"#1a1a1a"
+  */
 };
 
 
@@ -148,10 +149,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 256;
-unsigned int defaultbg = 257;
-static unsigned int defaultcs = 8;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 7;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
