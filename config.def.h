@@ -11,7 +11,7 @@ static char *font2[] = {
   "emoji:pixelsize=13"
 };
 
-static int borderpx = 0;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
