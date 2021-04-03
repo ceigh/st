@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=13";
+static char *font = "monospace:pixelsize=15";
 /* Spare fonts */
 static char *font2[] = {
-  "emoji:pixelsize=13"
+  "emoji:pixelsize=15"
 };
 
 static int borderpx = 2;
@@ -111,7 +111,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1;
+float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
