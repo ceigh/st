@@ -8,8 +8,7 @@
 static char *font = "monospace:pixelsize=15";
 /* Spare fonts */
 static char *font2[] = {
-  "emoji:pixelsize=13",
-  "Symbols Nerd Font"
+  "emoji:pixelsize=13"
 };
 
 static int borderpx = 2;
